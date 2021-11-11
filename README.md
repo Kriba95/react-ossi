@@ -1,4 +1,4 @@
-Käynnistä sovellus Ossi Juureen. esim.  C:\xampp\htdocs\ossi $ npm run dev
+Käynnistä sovellus Ossi Juureesta. esim.  C:\xampp\htdocs\ossi $ npm run dev
 
 ### `npm run dev`
 
