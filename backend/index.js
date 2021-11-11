@@ -3,7 +3,6 @@ const app = express()
 const cors = require('cors');
 const database = require('./config/database')
 const PORT = process.env.PORT || 3003
-
 //
 
 database.connect((err) => {
@@ -24,7 +23,7 @@ app.use(express.urlencoded({
 
 app.get('/api/data', (req, res) => {
   let sql = 'SELECT * FROM spdata';
-  
+  d
   database.query(sql, (err, result) => {
       if (err) {
         res.status(400).send(err);
@@ -33,8 +32,10 @@ app.get('/api/data', (req, res) => {
       if (result.length) res.json(result);
       else res.json({});
   });
-
 });
+
+
+
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
