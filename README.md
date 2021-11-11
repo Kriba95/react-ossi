@@ -10,7 +10,7 @@ Frontendiin voi lisätä seuraavasti moduuleja
 ### `cd frontend`
 ### `npm install [moduuli mitä asennetaan]`
 -> C:\xampp\htdocs\ossi $ cd frontend
--> C:\xampp\htdocs\ossi $ npm install (whatever)
+-> C:\xampp\htdocs\ossi\frontend $ npm install (whatever)
 
 ___________________________________________________________________________________________________________________________________________________________________________________
 
@@ -18,7 +18,7 @@ Backendiin voi lisätä seuraavasti moduuleja
 ### `cd backend`
 ### `npm install [moduuli mitä asennetaan]`
 -> C:\xampp\htdocs\ossi $ cd backend
--> C:\xampp\htdocs\ossi $ npm install (whatever)
+-> C:\xampp\htdocs\ossi\backend $ npm install (whatever)
 
 ___________________________________________________________________________________________________________________________________________________________________________________
 
