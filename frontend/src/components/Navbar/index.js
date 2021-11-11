@@ -77,48 +77,9 @@ const Navbars = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      {/* <Navbar bg="dark" variant="dark">
-        <Container>
-          <NavLink to="/">
-            <img
-              src={logo}
-              width="15%"
-              height="15%"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-          </NavLink>
-
-          <NavMenu>
-            <NavLink to="/selaa_ohje">Ohjeita</NavLink>
-            <NavLink to="/my_projects">Omat Projektit</NavLink>
-            <NavLink to="/my_studies">Omat opinnot</NavLink>
-            <NavLink to="/worklog">Työnajanseuranta</NavLink>
-            <NavLink to="/worklog">Teemapäivät</NavLink>
-          </NavMenu>
-
-          <Navbar.Toggle />
-
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Kirjautunut: <a href="#login">Opsikelija</a>
-            </Navbar.Text>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
-
-      {/* <Nav>
-        <NavLink to="/">
-          <h1>Logo</h1>
-        </NavLink>
-        <NavMenu>
-          <NavLink to="/selaa_ohje">Ohjeita</NavLink>
-          <NavLink to="/my_projects">Omat Projektit</NavLink>
-          <NavLink to="/my_studies">Omat opinnot</NavLink>
-          <NavLink to="/worklog">Työnajanseuranta</NavLink>
-        </NavMenu>
-      </Nav> */}
+      {/* NavDropdown pitää muokata vielä, sekä scripti ei ole vielä responsiivinen... --
+      NavDropdown = <a> ja Link on myös <a> react ei tykkää seuraavasta = <a><a></a></a> <-- eli tähän jatkossa muutosta
+       */}
     </>
   );
 };
