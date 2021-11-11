@@ -2,7 +2,7 @@ Käynnistä sovellus Ossi Juureen. esim.  C:\xampp\htdocs\ossi $ npm run dev
 
 ### `npm run dev`
 
-npm run dev käynnistää Backendin Ja Frontendin samaan aikaan.# react-ossi
+npm run dev käynnistää Backendin Ja Frontendin samaan aikaan.
 
 Frontendiin voi lisätä seuraavasti moduuleja 
 ### `cd frontend`
