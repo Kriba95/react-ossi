@@ -4,6 +4,8 @@ Käynnistä sovellus Ossi Juureen. esim.  C:\xampp\htdocs\ossi $ npm run dev
 
 npm run dev käynnistää Backendin Ja Frontendin samaan aikaan.
 
+___________________________________________________________________________________________________________________________________________________________________________________
+
 Frontendiin voi lisätä seuraavasti moduuleja 
 ### `cd frontend`
 ### `npm install [moduuli mitä asennetaan]`
