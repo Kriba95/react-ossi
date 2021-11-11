@@ -22,6 +22,13 @@ Backendiin voi lisätä seuraavasti moduuleja
 
 ___________________________________________________________________________________________________________________________________________________________________________________
 
+
 Roottiin emme saa lisätä mitään eli 
 -> C:\xampp\htdocs\ossi $ npm install (whatever) <-- Eli näin ei saa tehdä
 
+Root kansioon on lisätty "concurrently" joka sallii usean komennon.
+Tarkemmin ->  
+
+"scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" ",
+  },
