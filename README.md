@@ -10,6 +10,7 @@ Frontendiin voi lisätä seuraavasti moduuleja
 -> C:\xampp\htdocs\ossi $ cd frontend
 -> C:\xampp\htdocs\ossi $ npm install (whatever)
 
+___________________________________________________________________________________________________________________________________________________________________________________
 
 Backendiin voi lisätä seuraavasti moduuleja 
 ### `cd backend`
@@ -17,6 +18,7 @@ Backendiin voi lisätä seuraavasti moduuleja
 -> C:\xampp\htdocs\ossi $ cd backend
 -> C:\xampp\htdocs\ossi $ npm install (whatever)
 
+___________________________________________________________________________________________________________________________________________________________________________________
 
 Roottiin emme saa lisätä mitään eli 
 -> C:\xampp\htdocs\ossi $ npm install (whatever) <-- Eli näin ei saa tehdä
