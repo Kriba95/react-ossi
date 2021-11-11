@@ -1,16 +1,25 @@
 import React from "react";
-import { NavLink, NavMenu } from "./NavbarStyle";
+
+// React Assets
 import { Nav, NavDropdown, Container, Navbar } from "react-bootstrap";
+import { NavLink as Link } from "react-router-dom"; // Changes NavLink to shorter to Link
+
+// Custom Style CSS
+import { NavMenu } from "./NavbarStyle";
 
 // Assets
 import logo from "../../assets/images/it-velhot.png";
+
+
+// Scripts 
+let loggedInUser = "Opiskelijan(nimi)"
 
 const Navbars = () => {
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
-          <NavLink to="/">
+          <Link to="/">
             <img
               src={logo}
               width="15%"
@@ -18,49 +27,49 @@ const Navbars = () => {
               className="navbar-brand"
               alt="React Bootstrap logo"
             />
-          </NavLink>
+          </Link>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavMenu>
-                <NavLink className="nav-link" to="/selaa_ohje">
+                <Link title={loggedInUser} className="nav-link" to="/selaa_ohje">
                   Ohjeita
-                </NavLink>
-                <NavLink className="nav-link" to="/my_projects">
-                  Omat Projektit
-                </NavLink>
-                <NavLink className="nav-link" to="/my_studies">
-                  Omat opinnot
-                </NavLink>
-                <NavLink className="nav-link" to="/worklog">
+                </Link>
+                <Link className="nav-link" to="/my_projects">
+                  Omat_projektit
+                </Link>
+                <Link className="nav-link" to="/my_studies">
+                  Omat_opinnot
+                </Link>
+                <Link className="nav-link" to="/worklog">
                   Työnajanseuranta
-                </NavLink>
+                </Link>
               </NavMenu>
 
               <NavDropdown title="Teempapäivät" id="basic-nav-dropdown">
                 <NavDropdown.Item>
-                  <NavLink to="/themes/view">Selaa teemapäiviä</NavLink>
+                  <Link to="/themes/view">Selaa teemapäiviä</Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <NavLink to="/theme_session/theme_session">
+                  <Link to="/theme_session/theme_session">
                     Selaa teemapäivä ilmoituksia
-                  </NavLink>
+                  </Link>
                 </NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="Opiskelijan(nimi)" id="basic-nav-dropdown">
                 <NavDropdown.Item>
-                  <NavLink to="/">Etusivu</NavLink>
+                  <Link to="/">Etusivu</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  <NavLink to="/profile">Profiili</NavLink>
+                  <Link to="/profile">Profiili</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavLink to="/logout">Kirjaudu ulos</NavLink>
+                <Link to="/logout">Kirjaudu ulos</Link>
                 <br />
-                <NavLink to="/login">Kirjaudu sisään</NavLink>
+                <Link to="/login">Kirjaudu sisään</Link>
                 <br />
                 (Kirjaudu sisään Linkki poistetaan käytöstä tästä näkymästä)
               </NavDropdown>
