@@ -1,10 +1,18 @@
+import React, { Fragment, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 function Profile() {
-    return (
+  return (
+    <Fragment>
+      <Helmet>
+        <title>Minun Profiili | Ossi</title>
+      </Helmet>
+
       <div>
         <h1>My Profile</h1>
       </div>
-    );
-  }
-  
-  export default Profile;
-  
+    </Fragment>
+  );
+}
+
+export default Profile;

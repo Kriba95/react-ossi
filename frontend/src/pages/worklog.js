@@ -1,8 +1,17 @@
+import React, { Fragment, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 function Worklog() {
   return (
-    <div>
-      <h1>Work Log</h1>
-    </div>
+    <Fragment>
+      <Helmet>
+        <title>Worklog | Ossi</title>
+      </Helmet>
+
+      <div>
+        <h1>My Worklog</h1>
+      </div>
+    </Fragment>
   );
 }
 

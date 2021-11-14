@@ -1,10 +1,18 @@
+import React, { Fragment, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 function ThemeSession() {
-    return (
+  return (
+    <Fragment>
+      <Helmet>
+        <title>ThemeSession | Ossi</title>
+      </Helmet>
+
       <div>
-        <h1>Theme Session</h1>
+        <h1>My ThemeSession</h1>
       </div>
-    );
-  }
-  
-  export default ThemeSession;
-  
+    </Fragment>
+  );
+}
+
+export default ThemeSession;

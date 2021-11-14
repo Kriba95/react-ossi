@@ -1,8 +1,17 @@
+import React, { Fragment, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 function MyStudies() {
   return (
-    <div>
-      <h1>My Studies</h1>
-    </div>
+    <Fragment>
+      <Helmet>
+        <title>Omat Opinnot | Ossi</title>
+      </Helmet>
+
+      <div>
+        <h1>My MyStudies</h1>
+      </div>
+    </Fragment>
   );
 }
 

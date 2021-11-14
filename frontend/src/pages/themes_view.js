@@ -1,10 +1,18 @@
+import React, { Fragment, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 function ThemesView() {
-    return (
+  return (
+    <Fragment>
+      <Helmet>
+        <title>ThemesView | Ossi</title>
+      </Helmet>
+
       <div>
-        <h1>Themes View</h1>
+        <h1>My ThemesView</h1>
       </div>
-    );
-  }
-  
-  export default ThemesView;
-  
+    </Fragment>
+  );
+}
+
+export default ThemesView;
