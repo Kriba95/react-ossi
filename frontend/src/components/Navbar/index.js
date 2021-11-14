@@ -22,8 +22,8 @@ const Navbars = () => {
           <Link to="/">
             <img
               src={logo}
-              width="15%"
-              height="15%"
+              width="%"
+              height="50"
               className="navbar-brand"
               alt="React Bootstrap logo"
             />
@@ -32,10 +32,10 @@ const Navbars = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavMenu>
                 <Link title={loggedInUser} className="nav-link" to="/selaa_ohje">
                   Ohjeita
                 </Link>
+           
                 <Link className="nav-link" to="/my_projects">
                   Omat_projektit
                 </Link>
@@ -45,9 +45,10 @@ const Navbars = () => {
                 <Link className="nav-link" to="/worklog">
                   Työnajanseuranta
                 </Link>
-              </NavMenu>
 
               <NavDropdown title="Teempapäivät" id="basic-nav-dropdown">
+
+                
                 <NavDropdown.Item>
                   <Link to="/themes/view">Selaa teemapäiviä</Link>
                 </NavDropdown.Item>
@@ -57,6 +58,10 @@ const Navbars = () => {
                     Selaa teemapäivä ilmoituksia
                   </Link>
                 </NavDropdown.Item>
+
+
+
+
               </NavDropdown>
 
               <NavDropdown title="Opiskelijan(nimi)" id="basic-nav-dropdown">
@@ -77,8 +82,8 @@ const Navbars = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* NavDropdown pitää muokata vielä, sekä scripti ei ole vielä responsiivinen... --
-      NavDropdown = <a> ja Link on myös <a> react ei tykkää seuraavasta = <a><a></a></a> <-- eli tähän jatkossa muutosta
+      {/* NavDropdown pitää muokata vielä, 
+          NavDropdown = <a> ja Link on myös <a> react ei tykkää seuraavasta = <a><a></a></a> <-- eli tähän jatkossa muutosta
        */}
     </>
   );
