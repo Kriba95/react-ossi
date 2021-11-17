@@ -31,6 +31,9 @@ Tämä käynnistää Reactin porttiin 3000 ja samalla myös Express.js porttiin 
 -> C:\xampp\htdocs\ossi $ npm run dev
 
 
+
+
+
 Muista että portti 3006 on varattu MySql:ille ja se käynnistetään Xampin/Wampin (+ muut serverit) kautta. 
 
 Ja nimenomaan portti :3006 on varattuy MySQL
