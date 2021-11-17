@@ -1,4 +1,4 @@
-Näin lataat tämän sovelluksen GitHubista
+Näin lataat tämän sovelluksen GitHubista. Muista jokainen välivaihde alempana on terminaali esimerkki.
 
 ### `npm install`
 -> C:\xampp\htdocs\ossi $ npm install
