@@ -1,3 +1,32 @@
+### `npm install`
+esim
+-> C:\xampp\htdocs\ossi $ npm install
+
+
+### `cd frontend`
+-> C:\xampp\htdocs\ossi $ cd frontend
+
+### `npm install`
+-> C:\xampp\htdocs\ossi\frontend $ npm install
+
+### `cd ..`
+-> C:\xampp\htdocs\ossi\
+
+### `cd backend`
+-> C:\xampp\htdocs\ossi $ cd backend
+
+### `cd npm install`
+-> C:\xampp\htdocs\ossi\backend $ npm install
+
+### `cd ..`
+-> C:\xampp\htdocs\ossi $ cd ..
+
+### `npm run dev`
+-> C:\xampp\htdocs\ossi $ npm run dev
+
+___________________________________________________________________________________________________________________________________________________________________________________
+Kun olet asentanut npm kirjasto voit seuraavaksi käynnistää sovellus ->
+
 Käynnistä sovellus Ossi Juureesta. esim.  C:\xampp\htdocs\ossi $ npm run dev
 
 ### `npm run dev`
