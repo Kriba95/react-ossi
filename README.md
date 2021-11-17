@@ -1,30 +1,36 @@
 Näin lataat loput moduulit kun olet ladannut sovelluksen GitHubista. Muista jokainen välivaihde alempana on terminaali esimerkkit.
 
+
+Tämä asentaa concurrently moduulin root kansioon
 ### `npm install`
 -> C:\xampp\htdocs\ossi $ npm install
 
 
+
+Tämä asentaa React moduulit frontend kansioon
 ### `cd frontend`
 -> C:\xampp\htdocs\ossi $ cd frontend
-
 ### `npm install`
 -> C:\xampp\htdocs\ossi\frontend $ npm install
 
-### `cd ..`
--> C:\xampp\htdocs\ossi\
 
+### `cd ..`
+
+Tämä asentaa Express.js moduulit backend kansioon
+-> C:\xampp\htdocs\ossi\
 ### `cd backend`
 -> C:\xampp\htdocs\ossi $ cd backend
-
 ### `cd npm install`
 -> C:\xampp\htdocs\ossi\backend $ npm install
 
 ### `cd ..`
 -> C:\xampp\htdocs\ossi $ cd ..
 
+Tämä käynnistää Reactin porttiin 3000 ja samalla myös Express.js porttiin 3003
 ### `npm run dev`
 -> C:\xampp\htdocs\ossi $ npm run dev
 
+Muista että portti 3006 on varattu MySql:ille
 ___________________________________________________________________________________________________________________________________________________________________________________
 Kun olet asentanut npm kirjasto voit seuraavaksi käynnistää sovellus ->
 
