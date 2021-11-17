@@ -1,5 +1,6 @@
+Näin lataat tämän sovelluksen GitHubista
+
 ### `npm install`
-esim
 -> C:\xampp\htdocs\ossi $ npm install
 
 
