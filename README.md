@@ -32,6 +32,7 @@ Tämä käynnistää Reactin porttiin 3000 ja samalla myös Express.js porttiin 
 
 
 Muista että portti 3006 on varattu MySql:ille ja se käynnistetään Xampin/Wampin (+ muut serverit) kautta. 
+
 Ja nimenomaan portti :3006 on varattuy MySQL
 ___________________________________________________________________________________________________________________________________________________________________________________
 Kun olet asentanut npm kirjasto voit seuraavaksi käynnistää sovellus ->
