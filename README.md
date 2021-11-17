@@ -1,4 +1,4 @@
-Näin lataat tämän sovelluksen GitHubista. Muista jokainen välivaihde alempana on terminaali esimerkki.
+Näin lataat loput moduulit kun olet ladannut sovelluksen GitHubista. Muista jokainen välivaihde alempana on terminaali esimerkki.
 
 ### `npm install`
 -> C:\xampp\htdocs\ossi $ npm install
