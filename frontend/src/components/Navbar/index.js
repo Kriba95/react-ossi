@@ -5,7 +5,7 @@ import { Nav, NavDropdown, Container, Navbar } from "react-bootstrap";
 import { NavLink as Link } from "react-router-dom"; // Changes NavLink to shorter to Link
 
 // Custom Style CSS
-import { NavMenu } from "./NavbarStyle";
+// import { NavMenu } from "./NavbarStyle";
 
 // Assets
 import logo from "../../assets/images/it-velhot.png";
@@ -37,10 +37,10 @@ const Navbars = () => {
                 </Link>
            
                 <Link className="nav-link" to="/my_projects">
-                  Omat_projektit
+                  Omat projektit
                 </Link>
                 <Link className="nav-link" to="/my_studies">
-                  Omat_opinnot
+                  Omat opinnot
                 </Link>
                 <Link className="nav-link" to="/worklog">
                   Työnajanseuranta
