@@ -1,10 +1,10 @@
 Näin lataat loput moduulit kun olet ladannut sovelluksen GitHubista. Muista jokainen välivaihde alempana on terminaali esimerkkit.
 
-__
+______
 Tämä asentaa concurrently moduulin root kansioon
 ### `npm install`
 -> C:\xampp\htdocs\ossi $ npm install
-__
+______
 
 
 Tämä asentaa React moduulit frontend kansioon
@@ -15,7 +15,7 @@ Tämä asentaa React moduulit frontend kansioon
 
 
 ### `cd ..`
-__
+______
 Tämä asentaa Express.js moduulit backend kansioon
 -> C:\xampp\htdocs\ossi\
 ### `cd backend`
@@ -25,11 +25,11 @@ Tämä asentaa Express.js moduulit backend kansioon
 
 ### `cd ..`
 -> C:\xampp\htdocs\ossi $ cd ..
-__
+______
 Tämä käynnistää Reactin porttiin 3000 ja samalla myös Express.js porttiin 3003
 ### `npm run dev`
 -> C:\xampp\htdocs\ossi $ npm run dev
-__
+______
 
 
 
