@@ -5,24 +5,24 @@ import { Helmet } from "react-helmet";
 import { Container } from "react-bootstrap";
 import NavMenu from "../components/Nav";
 
-function ThemeSession() {
+function OpettajanTilat() {
   return (
     <Fragment>
       <Helmet>
-        <title>ThemeSession | Ossi</title>
+        <title>Opettajan Tilat | Ossi</title>
       </Helmet>
 
       <Container>
-      <br />
+        <br />
         <NavMenu />
         
         <br />
         <div>
-          <h1>My ThemeSession</h1>
+          <h1>Opettajan Tilat </h1>
         </div>
       </Container>
     </Fragment>
   );
 }
 
-export default ThemeSession;
+export default OpettajanTilat;

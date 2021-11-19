@@ -6,6 +6,7 @@ import "../scss/custom.scss";
 import { Helmet } from "react-helmet";
 import { Container } from "react-bootstrap";
 import TextEditor from "../components/CKeditor";
+import NavMenu from "../components/Nav";
 
 
 let mySQLdata = "Teknisen ja asiakaspalvelu osuuden"
@@ -19,6 +20,13 @@ function MyProjects() {
         <title>Omat Projektit | Ossi</title>
       </Helmet>
       <Container>
+        <br />
+        <NavMenu />
+        <br />
+
+
+
+        
         <h1>Teemapäivät</h1>
 
         <h1>Tukipyynnöt</h1>

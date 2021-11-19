@@ -11,6 +11,8 @@ import ThemeSession from "./pages/theme_session";
 import Profile from "./pages/profile";
 import Logout from "./pages/logout";
 import Login from "./pages/login";
+import Harjoittelut from "./pages/harjoittelut";
+import OpettajanTilat from "./pages/opettajan_tila";
 
 // Styles
 import "./App.scss";
@@ -41,6 +43,9 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/harjoittelut" element={<Harjoittelut />} />
+          <Route path="/opettaja_tila" element={<OpettajanTilat />} />
+
         </Routes>
 
       </Router>

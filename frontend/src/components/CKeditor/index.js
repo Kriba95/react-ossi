@@ -5,7 +5,7 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 // CKEditor Docs
 // https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/frameworks/react.html
 
-let editorData =  "<p>Hello from CKEditor 5! <b> Hellos </b></p>";
+let editorData =  "<p>Hello from CKEditor 5! <b> Hellouta takaisin </b></p>";
 
 
 const TextEditor = () => {
