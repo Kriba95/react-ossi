@@ -82,8 +82,10 @@ Tarkemmin ->
 
   
 ___________________________________________________________________________________________________________________________________________________________________________________
-Käytössä olevat node_modules
+Erikseen asennetut moduulit, tarkemmat tiedot saa package.json tiedostosta.
 
-Backend ->
-Frontend ->
-Root ->
+Backend -> nodemon, cors, express, mysql
+
+Frontend -> react-dom, react-helmet, bootstrap, react-bootstrap,sass, styled-components, ckeditor
+
+Root -> concurrently
