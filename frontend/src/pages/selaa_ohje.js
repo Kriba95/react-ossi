@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
 import { Helmet } from "react-helmet";
 
+// Bootstrap
+import { Container } from "react-bootstrap";
+
 function SelaaOhje() {
   return (
     <Fragment>
@@ -8,9 +11,11 @@ function SelaaOhje() {
         <title>Ohjeita | Ossi</title>
       </Helmet>
 
-      <div>
-        <h1>My SelaaOhje</h1>
-      </div>
+      <Container>
+        <div>
+          <h1>My SelaaOhje</h1>
+        </div>
+      </Container>
     </Fragment>
   );
 }

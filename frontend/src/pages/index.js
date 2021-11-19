@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
 import { Helmet } from "react-helmet";
 
+// Bootstrap
+import { Container } from "react-bootstrap";
+
 function Home() {
   return (
     <Fragment>
@@ -8,9 +11,11 @@ function Home() {
         <title>Etusivu</title>
       </Helmet>
 
-      <div>
-        <h1>My Etusivu</h1>
-      </div>
+      <Container>
+        <div>
+          <h1>My Etusivu</h1>
+        </div>
+      </Container>
     </Fragment>
   );
 }

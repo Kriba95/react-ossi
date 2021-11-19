@@ -78,4 +78,12 @@ Tarkemmin ->
 
 "scripts": {
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" ",
-  },
+  }
+
+  
+___________________________________________________________________________________________________________________________________________________________________________________
+Käytössä olevat node_modules
+
+Backend ->
+Frontend ->
+Root ->

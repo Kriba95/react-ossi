@@ -10,9 +10,8 @@ import { NavLink as Link } from "react-router-dom"; // Changes NavLink to shorte
 // Assets
 import logo from "../../assets/images/it-velhot.png";
 
-
-// Scripts 
-let loggedInUser = "Opiskelijan(nimi)"
+// Scripts
+let loggedInUser = "Opiskelijan(nimi)";
 
 const Navbars = () => {
   return (
@@ -32,58 +31,36 @@ const Navbars = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Link title={loggedInUser} className="nav-link" to="/selaa_ohje">
-                  Ohjeita
-                </Link>
-           
-                <Link className="nav-link" to="/my_projects">
-                  Omat projektit
-                </Link>
-                <Link className="nav-link" to="/my_studies">
-                  Omat opinnot
-                </Link>
-                <Link className="nav-link" to="/worklog">
-                  Työnajanseuranta
-                </Link>
+              <Link title={loggedInUser} className="nav-link" to="/selaa_ohje">Ohjeita</Link>
+
+              <Link className="nav-link" to="/forstudent/my_projects">Omat projektit</Link>
+              <Link className="nav-link" to="/forstudent/my_studies">Omat opinnot</Link>
+              <Link className="nav-link" to="/worklog">Työnajanseuranta</Link>
 
               <NavDropdown title="Teempapäivät" id="basic-nav-dropdown">
-
-                
-                <NavDropdown.Item>
-                  <Link to="/themes/view">Selaa teemapäiviä</Link>
-                </NavDropdown.Item>
-
-                <NavDropdown.Item>
-                  <Link to="/theme_session/theme_session">
-                    Selaa teemapäivä ilmoituksia
-                  </Link>
-                </NavDropdown.Item>
-
-
-
-
+                <Link className="dropdown-item" role="button" tabIndex="0" to="/themes/view">
+                  Selaa teemapäiviä
+                </Link>
+                <Link className="dropdown-item" role="button" tabIndex="0" to="/theme_session/theme_session">
+                  Selaa teemapäivä ilmoituksia
+                </Link>
               </NavDropdown>
 
               <NavDropdown title="Opiskelijan(nimi)" id="basic-nav-dropdown">
-                <NavDropdown.Item>
-                  <Link to="/">Etusivu</Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link to="/profile">Profiili</Link>
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <Link to="/logout">Kirjaudu ulos</Link>
-                <br />
-                <Link to="/login">Kirjaudu sisään</Link>
-                <br />
-                (Kirjaudu sisään Linkki poistetaan käytöstä tästä näkymästä)
+                
+                  <Link className="dropdown-item" role="button" tabIndex="0" to="/">Etusivu</Link>
+                  <Link className="dropdown-item" role="button" tabIndex="0" to="/profile">Profiili</Link>
+                  <NavDropdown.Divider />
+                  <Link className="dropdown-item" role="button" tabIndex="0" to="/logout">Kirjaudu ulos</Link>
+                  <Link className="dropdown-item" role="button" tabIndex="0" to="/login">Kirjaudu sisään</Link>
+                  (Kirjaudu sisään Linkki poistetaan käytöstä tästä näkymästä)
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* NavDropdown pitää muokata vielä, 
-          NavDropdown = <a> ja Link on myös <a> react ei tykkää seuraavasta = <a><a></a></a> <-- eli tähän jatkossa muutosta
+      {/* NavDropdown pitää CSS tyylitellä vielä, 
+         
        */}
     </>
   );
