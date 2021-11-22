@@ -13,6 +13,9 @@ import Logout from "./pages/logout";
 import Login from "./pages/login";
 import Harjoittelut from "./pages/harjoittelut";
 import OpettajanTilat from "./pages/opettajan_tila";
+import Search from "./pages/search";
+
+import ContextProvider from "./context";
 
 // Styles
 import "./App.scss";
@@ -21,9 +24,10 @@ import "./App.scss";
 import Navbars from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const App = () => {
+function App() {
   return (
     <>
+    <ContextProvider>
       <Router>
         {/* Navbar */}
         <Navbars />
@@ -45,10 +49,13 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/harjoittelut" element={<Harjoittelut />} />
           <Route path="/opettaja_tila" element={<OpettajanTilat />} />
+          <Route path="/search" element={<Search />} />
+
 
         </Routes>
 
       </Router>
+      </ContextProvider>
     </>
   );
 };

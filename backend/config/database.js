@@ -4,7 +4,7 @@ const conn = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "python"
+    database: "ossi_db"
 });
 
-module.exports  = conn;
+module.exports  = conn; 

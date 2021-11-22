@@ -9,6 +9,7 @@ let editorData =  "<p>Hello from CKEditor 5! <b> Hellouta takaisin </b></p>";
 
 
 const TextEditor = () => {
+
   return (
     <>
       <CKEditor
@@ -29,6 +30,8 @@ const TextEditor = () => {
           console.log("Focus.", editor);
         }}
       />
+
+      
     </>
   );
 };

@@ -26,7 +26,7 @@ Tämä asentaa Express.js moduulit backend kansioon
 ### `cd ..`
 -> C:\xampp\htdocs\ossi $ cd ..
 ______
-Tämä käynnistää Reactin porttiin 3000 ja samalla myös Express.js porttiin 3003
+Tämä käynnistää Reactin porttiin 3000 ja samalla myös Express.js porttiin 5005
 ### `npm run dev`
 -> C:\xampp\htdocs\ossi $ npm run dev
 ______
@@ -34,9 +34,9 @@ ______
 
 
 
-Muista että portti 3006 on varattu MySql:ille ja se käynnistetään Xampin/Wampin (+ muut serverit) kautta. 
+Muista että portti 3306 on varattu MySql:ille ja se käynnistetään Xampin/Wampin (+ muut serverit) kautta. 
 
-Ja nimenomaan portti :3006 on varattu MySQL
+Ja nimenomaan portti :3306 on varattu MySQL
 ___________________________________________________________________________________________________________________________________________________________________________________
 Kun olet asentanut npm kirjasto voit seuraavaksi käynnistää sovellus ->
 

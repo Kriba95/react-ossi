@@ -4,8 +4,11 @@ import React from "react";
 import { Nav, NavDropdown, Container, Navbar } from "react-bootstrap";
 import { NavLink as Link } from "react-router-dom"; // Changes NavLink to shorter to Link
 
-// Custom Style CSS
-// import { NavMenu } from "./NavbarStyle";
+// Custom Styled component -- CSS
+// import { Search } from "./NavbarStyle";
+
+// Custom CSS
+import "./Navbar.scss";
 
 // Assets
 import logo from "../../assets/images/it-velhot.png";
@@ -55,6 +58,19 @@ const Navbars = () => {
                   <Link className="dropdown-item" role="button" tabIndex="0" to="/login">Kirjaudu sisään</Link>
                   (Kirjaudu sisään Linkki poistetaan käytöstä tästä näkymästä)
               </NavDropdown>
+
+              <div className="search">
+                <input type="text" className="search__input" aria-label="search" placeholder="Hae..." />
+                <button className="search__submit" aria-label="submit search"><i className="fas fa-search"></i></button>
+              </div>
+{/* 
+              <Search>
+                <input className="search_input" type="text" name="" placeholder="Search here..." />              
+                <a className="search_icon">
+                  <i className="fa fa-search"></i>
+                </a> 
+              </Search> */}
+
             </Nav>
           </Navbar.Collapse>
         </Container>
