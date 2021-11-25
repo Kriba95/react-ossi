@@ -43,7 +43,7 @@ app.use(express.urlencoded({
       else res.send(json(result));
       // console.log(result);
 
-  });
+  }); 
 });
 
 app.get('/api/projekts', (req, res) => {

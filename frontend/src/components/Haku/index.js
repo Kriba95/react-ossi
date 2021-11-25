@@ -6,7 +6,7 @@ function Haku() {
    const { search } = useContext(Context);
 
   const initialState = {
-    userInfo: {
+    userInput: {
       haku: "",
     },
     errorMsg: "",
@@ -19,31 +19,34 @@ function Haku() {
   const onChangeValue = (e) => {
     setState({
       ...state,
-      userInfo: {
-        ...state.userInfo,
+      userInput: {
+        ...state.userInput,
         [e.target.name]: e.target.value,
       },
     }) ;
-        console.warn(state.userInfo);
+        // console.warn(state.userInput);
 
   };
 
   // On Submit Login From
   const submitForm = async (event) => {
     event.preventDefault();
-    const data = await search(state.userInfo);
+    const data = await search(state.userInput);
     console.log(data)
+
+
     if (data.success) {
       setState({
         ...initialState,
         successMsg: "-",
+        haku: "Ei yhteyttä.",
       });
    
     } else {
       setState({
         ...initialState,
         successMsg: "",
-        haku: data.message,
+        haku: data
       });
     }
   };
@@ -58,11 +61,15 @@ function Haku() {
               type="haku"
               required
               placeholder="Hae"
-              value={state.userInfo.haku}
+              value={state.userInput.haku}
               onChange={onChangeValue}
             />
-        <button type="submit">Haku</button>
+        <button className="btn-primary" type="submit">Haku</button>
       </form>
+      <div>
+
+
+      </div>
     </>
   );
 };
