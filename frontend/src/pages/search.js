@@ -19,7 +19,7 @@ function Search() {
         <br />
         
         <div>
-          <h1>My Hae</h1>
+          <h1>Hae Ossista</h1>
           <Haku />
         </div>
       </Container>

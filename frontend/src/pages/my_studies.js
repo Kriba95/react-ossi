@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { Col, Container, Row, Button } from "react-bootstrap";
 // xs (phones), sm (tablets), md (desktops), and lg (larger desktops)
 import NavMenu from "../components/Nav";
-
+import ReCharts from "../components/Recharts";
 
 let STT = "9";
 
@@ -15,6 +15,7 @@ function MyStudies() {
         <title>Omat Opinnot | Ossi</title>
       </Helmet>
 
+
       <Container>
         <br />
         <NavMenu />
@@ -23,7 +24,7 @@ function MyStudies() {
           <Col lg={4} md={5} sm={6} xs={6}>
             <h1>Omat Opinnot</h1>
           </Col>
-          <Col lg={4} md={5} sm={6} xs={10}>
+          <Col lg={4} md={5} sm={3} xs={10}>
             <input placeholder="Hae Opintoja..." type="text" name="" id="" />
             <Button className="opintoHaku">Hae</Button>
           </Col>
@@ -51,6 +52,11 @@ function MyStudies() {
               </dt>
             </dl>
           </div>
+
+          <Col lg={3} md={3} sm={4} xs={6}>
+            <ReCharts />
+
+          </Col>
         </Row>
       </Container>
     </Fragment>
