@@ -46,8 +46,10 @@ app.use(express.urlencoded({
   }); 
 });
 
-app.get('/api/projekts', (req, res) => {
-  let sql = 'SELECT * FROM projektit';
+
+// Hakee Opettajat @ /opettaja_tila
+app.get('/api/opettajantila', (req, res) => {
+  let sql = 'SELECT first_name, last_name, status_text, status_date, email FROM ossi_db.user';
   
   database.query(sql, (err, result) => {
       if (err) {

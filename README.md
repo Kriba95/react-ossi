@@ -86,6 +86,6 @@ Erikseen asennetut moduulit, tarkemmat tiedot saa package.json tiedostosta.
 
 Backend -> nodemon, cors, express, mysql
 
-Frontend -> react-dom, react-helmet, bootstrap, react-bootstrap,sass, styled-components, ckeditor
+Frontend -> react-dom, react-helmet, bootstrap, react-bootstrap,sass, styled-components, ckeditor, ReCharts
 
 Root -> concurrently

@@ -18,7 +18,7 @@ function Harjoittelut() {
         <br />
         
         <div>
-          <h1>My Harjoittelujakso</h1>
+          <h1>Omat harjoittelujaksot</h1>
         </div>
       </Container>
     </Fragment>

@@ -12,7 +12,7 @@ const Axios = axios.create({
 class ContextProvider extends Component {
   // constructor() {
   //   super();
-  //   // this.getSearch();
+  //   this.opettajanTila();
 
   // }
 
@@ -20,9 +20,41 @@ class ContextProvider extends Component {
   state = {
     showLogin: true,
     isAuth: false,
-    theUser: null,
+    oTila: "",
   };
 
+
+  ///////////////////////////////////////////////////77
+
+  search = async (user) => {
+    // Sending the user Login request
+    const haku = await Axios.post("api/haku", {
+      haku: user.haku      
+    });
+    // console.log(haku.data)
+    return haku.data;
+  };
+
+  opettajanTila = async () => {
+    // Sending the user Login request
+    const oTila = await Axios.get("api/opettajantila");
+    // console.log(oTila)
+    // console.log(haku.data)
+    if (oTila) {
+      console.log(oTila);
+      this.setState({
+        ...this.state,
+        oTila: oTila.data
+    
+      });
+    }
+    return oTila.data;
+
+  };
+
+
+
+  ////////////////////////////////////////////////////77
 
   
 
@@ -104,6 +136,21 @@ class ContextProvider extends Component {
     return haku.data;
   };
 
+  // opettajanTila = async (user) => {
+  //   // Sending the user Login request
+  //   const haku = await Axios.post("api/haku", {
+  //     haku: user.haku      
+  //   });
+  //   // console.log(haku.data)
+  //   return haku.data;
+  // };
+
+
+
+
+
+
+
   // Checking user logged in or not
   isLoggedIn = async () => {
     const loginToken = localStorage.getItem("loginToken");
@@ -135,6 +182,7 @@ class ContextProvider extends Component {
       registerUser: this.registerUser,
       loginUser: this.loginUser,
       search: this.search,
+      opettajanTila: this.opettajanTila,
 
       logoutUser: this.logoutUser,
     };

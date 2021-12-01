@@ -18,7 +18,7 @@ function ThemeSession() {
         
         <br />
         <div>
-          <h1>My ThemeSession</h1>
+          <h1>Teemapäiväilmoitukset</h1>
         </div>
       </Container>
     </Fragment>
